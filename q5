@@ -1,1 +1,0 @@
-5.	SELECT firstname, lastname FROM worker WHERE salary IN (SELECT MIN(salary) FROM worker);
