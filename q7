@@ -1,1 +1,0 @@
-7.	SELECT worker.firstname, worker.lastname, dept.departmentname FROM ASSIGN, WORKER, DEPT WHERE worker.empid = assign.empid AND assign.projno = 1019 AND dept.departmentid = worker.departmentid;
