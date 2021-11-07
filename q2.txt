@@ -1,5 +1,5 @@
 SELECT * 
 FROM project 
-WHERE projname LIKE  ‘%urn’;
+WHERE projname LIKE  ‘%urn%’;
 
 /* LIKE command check the existance of a specific word in the condition */
