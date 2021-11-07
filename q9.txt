@@ -1,0 +1,4 @@
+CREATE VIEW QUESTION9
+AS SELECT a.projno, p.projname, a.empid, w.lastname, w.firstname
+FROM PROJECT p, ASSIGN a, WORKER w
+WHERE a.projno = p.projno AND a.empid = w.empid;

@@ -1,0 +1,4 @@
+SELECT projno, COUNT(empid) AS NumberofWorkers ,SUM(hoursassigned) AS SumofHours
+FROM ASSIGN
+GROUP BY projno
+ORDER BY projno;
