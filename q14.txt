@@ -1,3 +1,5 @@
+/*compute the count of all workers assigned to each project and
+the count of hours they are assigned to those projects */
 SELECT projno, COUNT(empid) AS NumberofWorkers ,SUM(hoursassigned) AS SumofHours
 FROM ASSIGN
 GROUP BY projno
