@@ -1,3 +1,6 @@
 SELECT a.projno, a.empid , w.lastname, w.firstname
 FROM ASSIGN a, PROJECT p, WORKER w
+/*find all projects that start any date after the 1st of September 2021,
+for those projects find the assigned workers' EmpIDs in table ASSIGN using the projNo s
+and find the workers' names in table WORKER using the workers' EmpIDs*/
 WHERE a.projno = p.projno AND p.startDate > DATE'2021-09-01' AND a.empid = w.empid;
