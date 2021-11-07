@@ -1,6 +1,7 @@
 SELECT w.lastName, w.firstName, a.rating
 FROM ASSIGN a, WORKER w, PROJECT p
+--find Michael Burns' EmpID and use it to find the workers that work for projects he manages
 WHERE p.projmgrid = (SELECT w.empid FROM WORKER w WHERE w.lastname='Burns' AND w.firstname='Michael') 
 AND p.projno = a.projno AND a.empid = w.empid
---find Michael Burns' EmpID and use it to find the workers that work for projects he manages
-ORDER BY w.lastName, w.firstName ASC; --show names in alphabetical order
+--show names in alphabetical order
+ORDER BY w.lastName, w.firstName ASC;
