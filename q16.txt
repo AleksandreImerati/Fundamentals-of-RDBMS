@@ -1,0 +1,6 @@
+SELECT projname, projno, startdate
+FROM project 
+WHERE startdate IN (SELECT startdate 
+                    FROM project
+                    GROUP BY startdate
+                    HAVING COUNT(startdate)> 1);

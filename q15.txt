@@ -1,0 +1,6 @@
+SELECT firstname, lastname 
+FROM worker, assign, dept, project 
+WHERE 
+NOT EXISTS (SELECT*
+            FROM assign
+            WHERE assign.empid = worker.empid);

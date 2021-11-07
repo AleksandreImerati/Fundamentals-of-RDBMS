@@ -1,0 +1,13 @@
+UPDATE project
+SET status = 'active'			     /* code for the “active” status */
+WHERE projno = (the number of the project);
+
+UPDATE project
+SET status = ‘completed’		     /* code for the “completed” status */
+WHERE projno = (the number of the project);
+		
+UPDATE project
+SET status = 'canceled'			     /* code for the “canceled” status */
+WHERE projno = (the number of the project);
+
+SELECT * FROM project WHERE status = 'active'  /* Select statement to show all the active projects */
