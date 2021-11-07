@@ -1,1 +1,5 @@
-5.	SELECT firstname, lastname FROM worker WHERE salary IN (SELECT MIN(salary) FROM worker);
+5.	SELECT firstname, lastname 
+FROM worker 
+WHERE salary IN (SELECT MIN(salary) FROM worker);
+
+# SELECT MIN function returns the smallest value of the salary column
