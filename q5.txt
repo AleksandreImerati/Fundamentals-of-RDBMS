@@ -1,5 +1,5 @@
-SELECT firstname, lastname 
-FROM worker 
-WHERE salary IN (SELECT MIN(salary) FROM worker);
+SELECT lastName, firstName
+FROM WORKER 
+WHERE salary=(SELECT MIN(salary) FROM WORKER WHERE departmentID=2);
 
 /* SELECT MIN function returns the smallest value of the salary column */
