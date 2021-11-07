@@ -2,7 +2,23 @@ ALTER TABLE Project ADD status varchar2(15);
 
 UPDATE project
 SET status = 'active'			     /* code for the “active” status */
+WHERE projno = 1005;
+
+UPDATE project
+SET status = 'active'			     /* code for the “active” status */
+WHERE projno = 1019;
+
+UPDATE project
+SET status = 'active'			     /* code for the “active” status */
+WHERE projno = 1030;
+
+UPDATE project
+SET status = 'active'			     /* code for the “active” status */
 WHERE projno = 1031;
+
+UPDATE project
+SET status = 'active'			     /* code for the “active” status */
+WHERE projno = 1032;
 
 UPDATE project
 SET status = 'active'			     /* code for the “active” status */
@@ -11,9 +27,10 @@ WHERE projno = 1033;
 UPDATE project
 SET status = ‘completed’		     /* code for the “completed” status */
 WHERE projno = 1001;
-		
+
 UPDATE project
 SET status = 'canceled'			     /* code for the “canceled” status */
 WHERE projno = 1025;
+
 
 SELECT * FROM project WHERE status = 'active'  /* Select statement to show all the active projects */
