@@ -2,4 +2,4 @@ SELECT worker.firstname, worker.lastname, dept.departmentname
 FROM ASSIGN, WORKER, DEPT 
 WHERE worker.empid = assign.empid AND assign.projno = 1019 AND dept.departmentid = worker.departmentid;
 
-AND command displays the condition if all the separated conditions with AND are true 
+/* AND command displays the condition if all the separated conditions with AND are true */
