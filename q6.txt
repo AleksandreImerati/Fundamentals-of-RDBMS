@@ -1,5 +1,4 @@
 6.	SELECT * 
 FROM project 
 WHERE budget IN (SELECT MAX (budget) FROM project);
-
-# MAX() function returns the largest value of the budget column
+/* MAX() function returns the largest value of the budget column */
