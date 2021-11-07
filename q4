@@ -1,1 +1,0 @@
-4.	SELECT assign.projno, worker.firstname, worker.lastname FROM assign, worker WHERE projno = 1001 AND worker.empid = assign.empid ORDER BY worker.lastname;
