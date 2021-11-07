@@ -1,14 +1,13 @@
---add all group members as workers in the WORKER table
+/*add all group members as workers in the WORKER table*/
 INSERT INTO WORKER VALUES(233099,'Mati','Riki',2,DATE'1999-09-14',DATE'2020-10-25',40000);
 INSERT INTO WORKER VALUES(238301,'Pantazi','Despoina',2,DATE'2001-11-21',DATE'2021-10-10',30000);
 INSERT INTO WORKER VALUES(225578,'Imerati','Aleksandre',2,DATE'2001-05-14',DATE'2021-06-13',36000);
---assign two projects to each group member
+
+/*assign two projects to each group member*/
 INSERT INTO ASSIGN VALUES(1001,233099,25,null);
 INSERT INTO ASSIGN VALUES(1025,233099,30,null);
-
 INSERT INTO ASSIGN VALUES(1030,238301,25,null);
 INSERT INTO ASSIGN VALUES(1031,238301,30,null);
-
 INSERT INTO ASSIGN VALUES(1005,225578,15,null);
 INSERT INTO ASSIGN VALUES(1019,225578,35,null);
 
