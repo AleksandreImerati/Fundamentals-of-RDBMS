@@ -1,7 +1,8 @@
 ALTER TABLE project
 ADD numEmployeesAssigned Number(6);   /* Create the field "numEmployeesAssigned" with the "number" constraint on the table "project" */
----------------------------------------------------------------------------------------------------------------------------
+
 UPDATE project 
 SET numEmployeesAssigned =(SELECT COUNT(*)  
                            FROM assign
-                           WHERE assign.projNo = project.projNo);  /* Use a subquery to insert values that correspond to the current information on the "assign" table */
+                           WHERE assign.projNo = project.projNo);  
+/* Use a subquery to insert values that correspond to the current information on the "assign" table */
