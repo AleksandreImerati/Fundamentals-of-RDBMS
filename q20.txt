@@ -6,7 +6,7 @@ UPDATE project
 SET numEmployeesAssigned = numEmployeesAssigned + 1  /* we use "numEmployeesAssigned + 1" for the "add" trigger */
 WHERE project.projNo =:NEW.projNo;
 END;
----------------------------------------------------------------------------------------------------------------------------
+
 CREATE OR REPLACE TRIGGER dropassign
 AFTER DELETE ON assign
 FOR EACH ROW
@@ -15,7 +15,7 @@ UPDATE project
 SET numEmployeesAssigned = numEmployeesAssigned - 1  /* we use "numEmployeesAssigned - 1" for the "drop" trigger */
 WHERE project.projNo = :OLD.projNo;
 END;
----------------------------------------------------------------------------------------------------------------------------
+
 CREATE OR REPLACE TRIGGER switchassign
 AFTER UPDATE OF projNo ON assign
 FOR EACH ROW
