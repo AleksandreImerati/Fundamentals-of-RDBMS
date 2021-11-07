@@ -1,4 +1,4 @@
-SELECT worker.firstname, worker.lastname, dept.departmentname 
+SELECT worker.firstname, worker.lastname
 FROM worker,dept 
 WHERE dept.departmentname IN ('Accounting') AND dept.departmentid = worker.departmentid
 
