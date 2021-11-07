@@ -1,1 +1,5 @@
-1.	SELECT worker.firstname, worker.lastname, dept.departmentname FROM worker,dept WHERE dept.departmentname IN ('Accounting') AND dept.departmentid = worker.departmentid
+SELECT worker.firstname, worker.lastname, dept.departmentname 
+FROM worker,dept 
+WHERE dept.departmentname IN ('Accounting') AND dept.departmentid = worker.departmentid
+
+# IN command specifies the condition, which in this situation is Accounting
