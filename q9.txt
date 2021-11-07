@@ -1,5 +1,5 @@
 CREATE VIEW QUESTION9
 AS SELECT a.projno, p.projname, a.empid, w.lastname, w.firstname
-  FROM PROJECT p, ASSIGN a, WORKER w
-  /*match the projNo s and EmpID s from the tables Assign - Project and Assign - Worker respectively*/
-  WHERE a.projno = p.projno AND a.empid = w.empid;
+    FROM PROJECT p, ASSIGN a, WORKER w
+    /*match the projNo s and EmpID s from the tables Assign - Project and Assign - Worker respectively*/
+    WHERE a.projno = p.projno AND a.empid = w.empid;
