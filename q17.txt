@@ -1,3 +1,5 @@
+ALTER TABLE Project ADD status varchar2(15);
+
 UPDATE project
 SET status = 'active'			     /* code for the “active” status */
 WHERE projno = (the number of the project);
