@@ -1,0 +1,1 @@
+6.	SELECT * FROM project WHERE budget IN (SELECT MAX (budget) FROM project);
