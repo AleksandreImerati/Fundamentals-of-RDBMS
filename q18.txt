@@ -1,1 +1,4 @@
-SELECT empid, projno FROM assign WHERE rating IS NULL  /* The usage of "IS NULL" command to show which project rating is null */
+SELECT empid, projno 
+FROM assign 
+WHERE rating IS NULL  
+/* The usage of "IS NULL" command to show which project rating is null */
